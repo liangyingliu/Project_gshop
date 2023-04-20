@@ -125,6 +125,140 @@
                                 <li>票</li>
                             </ul>
                         </div>
+                        <div class="zhong">
+                            <stars class="stars" :pingfen='4.1'></stars>
+                            <span class="pingfen">4.1</span>
+                            <span class="yueshou">月售106单</span>
+                            <zhuansong class="zhuansong"></zhuansong>
+                        </div>
+                        <div class="xia">
+                            <span>￥20起送 / 配送费约5元</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="food_item">
+                    <div class="photo">
+                        <img src="./images/shop/1.jpg">
+                    </div>
+                    <div class="info">
+                        <div class="shang">
+                            <jinpai></jinpai>
+                            <h3 class="title">锄禾日当午，汗滴禾下土</h3>
+                            <ul>
+                                <li>保</li>
+                                <li>准</li>
+                                <li>票</li>
+                            </ul>
+                        </div>
+                        <div class="zhong">
+                            <stars class="stars" :pingfen='4.1'></stars>
+                            <span class="pingfen">4.1</span>
+                            <span class="yueshou">月售106单</span>
+                            <zhuansong class="zhuansong"></zhuansong>
+                        </div>
+                        <div class="xia">
+                            <span>￥20起送 / 配送费约5元</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="food_item">
+                    <div class="photo">
+                        <img src="./images/shop/1.jpg">
+                    </div>
+                    <div class="info">
+                        <div class="shang">
+                            <jinpai></jinpai>
+                            <h3 class="title">锄禾日当午，汗滴禾下土</h3>
+                            <ul>
+                                <li>保</li>
+                                <li>准</li>
+                                <li>票</li>
+                            </ul>
+                        </div>
+                        <div class="zhong">
+                            <stars class="stars" :pingfen='4.1'></stars>
+                            <span class="pingfen">4.1</span>
+                            <span class="yueshou">月售106单</span>
+                            <zhuansong class="zhuansong"></zhuansong>
+                        </div>
+                        <div class="xia">
+                            <span>￥20起送 / 配送费约5元</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="food_item">
+                    <div class="photo">
+                        <img src="./images/shop/1.jpg">
+                    </div>
+                    <div class="info">
+                        <div class="shang">
+                            <jinpai></jinpai>
+                            <h3 class="title">锄禾日当午，汗滴禾下土</h3>
+                            <ul>
+                                <li>保</li>
+                                <li>准</li>
+                                <li>票</li>
+                            </ul>
+                        </div>
+                        <div class="zhong">
+                            <stars class="stars" :pingfen='4.1'></stars>
+                            <span class="pingfen">4.1</span>
+                            <span class="yueshou">月售106单</span>
+                            <zhuansong class="zhuansong"></zhuansong>
+                        </div>
+                        <div class="xia">
+                            <span>￥20起送 / 配送费约5元</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="food_item">
+                    <div class="photo">
+                        <img src="./images/shop/1.jpg">
+                    </div>
+                    <div class="info">
+                        <div class="shang">
+                            <jinpai></jinpai>
+                            <h3 class="title">锄禾日当午，汗滴禾下土</h3>
+                            <ul>
+                                <li>保</li>
+                                <li>准</li>
+                                <li>票</li>
+                            </ul>
+                        </div>
+                        <div class="zhong">
+                            <stars class="stars" :pingfen='4.1'></stars>
+                            <span class="pingfen">4.1</span>
+                            <span class="yueshou">月售106单</span>
+                            <zhuansong class="zhuansong"></zhuansong>
+                        </div>
+                        <div class="xia">
+                            <span>￥20起送 / 配送费约5元</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="food_item">
+                    <div class="photo">
+                        <img src="./images/shop/1.jpg">
+                    </div>
+                    <div class="info">
+                        <div class="shang">
+                            <jinpai></jinpai>
+                            <h3 class="title">锄禾日当午，汗滴禾下土</h3>
+                            <ul>
+                                <li>保</li>
+                                <li>准</li>
+                                <li>票</li>
+                            </ul>
+                        </div>
+                        <div class="zhong">
+                            <stars class="stars" :pingfen='4.1'></stars>
+                            <span class="pingfen">4.1</span>
+                            <span class="yueshou">月售106单</span>
+                            <zhuansong class="zhuansong"></zhuansong>
+                        </div>
+                        <div class="xia">
+                            <span>￥20起送 / 配送费约5元</span>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -137,7 +271,9 @@
 import Swiper from 'swiper'
 import 'swiper/swiper.min.css'
 import jinpai from './jinpai.vue'
-    //import x from ''
+import zhuansong from './zhuansong.vue'
+import stars from './stars.vue'
+
 export default {
     mounted() {
         new Swiper('.swiper', {
@@ -148,7 +284,9 @@ export default {
             })
         },
     components: {
-           jinpai 
+        jinpai,
+        zhuansong,
+        stars
     },
     methods: {
         goTo(path) {
@@ -234,7 +372,11 @@ export default {
     color: black;
     font-weight: bold;
 }
-
+.food{
+    width: 100%;
+    height: 93%;
+    overflow: auto;
+}
 .food .photo img{
     width: 100px;
 }
@@ -242,9 +384,16 @@ export default {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    padding-bottom: 5px;
+    margin-top: 5px;
+    border-bottom: 1px solid rgb(222, 225, 230);
 }
 .info{
-    width: 500px;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 8px;
 }
 .info .shang{
     display: flex;
@@ -254,7 +403,7 @@ export default {
 .shang h3{
     display: block;
     height: 20px;
-    width: 150px;
+    width: 120px;
     font-weight: bold;
     line-height: 20px;
     padding-left: 5px;
@@ -269,8 +418,38 @@ export default {
 .shang ul li{
     font-size: 17px;
     display: inline-block;
-    border-radius: 50%;
+    border-radius: 10%;
     border: 1px solid rgb(198, 198, 198);
     color: rgb(198, 198, 198);
+}
+.zhong{
+    margin-top: 30px;
+    display: flex;
+    position: relative;
+}
+.pingfen{
+    height: 15px;
+    color: rgb(234, 126, 74);
+    font-size: 10px;
+    font-weight: bold;
+    line-height: 15px;
+}
+.yueshou{
+    height: 15px;
+    font-size: 10px;
+    color: rgb(198, 198, 198);
+    margin-left: 8px;
+    line-height: 15px;
+}
+.zhuansong{
+    position: absolute;
+    right: 10px;
+}
+.xia{
+    width: 100%;
+    height: 18%;
+}
+.xia span{
+    font-size: 13px;
 }
 </style>

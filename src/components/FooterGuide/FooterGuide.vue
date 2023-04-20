@@ -49,6 +49,7 @@
     border-top: 1px solid rgb(222, 225, 230);
     display: flex;
     justify-content: space-around;
+    background-color: white;
 }
 .guide_item{
     padding: 3% 0;
